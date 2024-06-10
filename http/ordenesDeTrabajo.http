@@ -1,0 +1,31 @@
+
+### Obtener todas las Ordenes de Trabajo
+GET http://localhost:3000/api/ordenesDeTrabajo
+
+### Obtener una Orden de Trabajo por ID
+GET http://localhost:3000/api/ordenesDeTrabajo/10
+
+### Crear una Orden de Trabajo
+POST http://localhost:3000/api/ordenesDeTrabajo
+Content-Type: application/json
+
+{
+    "vehiculoId": "V005",
+    "proveedorId": 2,
+    "fechaEmision": "2023-09-15",
+    "detalles": "Revisión completa del motor",
+    "costo": 1500,
+    "estadoPago": "pendiente",
+    "detallesPagoId": 16
+}
+
+### Actualizar una Orden de Trabajo
+PATCH http://localhost:3000/api/ordenesDeTrabajo/11
+Content-Type: application/json
+
+{
+    "estadoPago": "pendiente",
+}
+
+### Eliminar una Orden de Trabajo
+DELETE http://localhost:3000/api/ordenesDeTrabajo/13
