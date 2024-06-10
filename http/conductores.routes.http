@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/conductores
+
+### 
+GET http://localhost:3000/api/conductores/C001
+
+### 
+POST http://localhost:3000/api/conductores
+Content-Type: application/json
+
+{
+    "id": "0206",
+    "nombre": "Axel Vieyra",
+    "telefono": "5454567890",
+    "numeroLicencia": "1234567890",
+    "expiracionLicencia": "2026-01-01",
+    "foto": "http://localhost:3000/foto.jpg",
+    "notas": "Conductor de la empresa"
+}
+
+### 
+PATCH  http://localhost:3000/api/conductores/0205
+Content-Type: application/json
+
+{
+    "telefono": "99886780",
+    "foto": "foto.jpg",
+    "notas": "Conductor de la empresa, desempeño excelente"
+}
+
+### 
+DELETE http://localhost:3000/api/conductores/0206
