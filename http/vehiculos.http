@@ -1,8 +1,8 @@
-POST http://localhost:3000/api/vehiculos
+PATCH   http://localhost:3000/api/vehiculos/V001
 Content-Type: application/json
 
 {
-
+    "foto": "https://carnovo.com/wp-content/uploads/2024/04/toyota-hilux-2024-2.jpg"
 }
 
 ###
