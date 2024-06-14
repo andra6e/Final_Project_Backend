@@ -73,7 +73,7 @@ CREATE TABLE `Facturas` (
 CREATE TABLE `OrdenesDeTrabajo` (
   `id` int NOT NULL,
   `vehiculoId` varchar(20) DEFAULT NULL,
-  `proveedorId` int DEFAULT NULL,
+  `proveedorId` varchar(20) DEFAULT NULL,
   `fechaEmision` timestamp NULL DEFAULT NULL,
   `detalles` text,
   `costo` decimal(10,2) DEFAULT NULL,
